@@ -1,0 +1,43 @@
+img{
+    width: 100;
+}
+
+.a{
+text-decoration: none;
+position: relative;
+left: 120;
+top: -72;
+color: rgb(0, 0, 0);
+font-size: larger;
+
+}
+
+.b{
+   text-decoration: none;
+position: relative;
+left: 160;
+top: -72;
+color: rgb(0, 0, 0);
+font-size: larger;
+}
+
+.c{
+       text-decoration: none;
+position: relative;
+left: 200;
+top: -72;
+color: rgb(0, 0, 0);
+font-size: larger;
+}
+
+hr{
+    position: relative;
+    top: -30;
+}
+
+.jj{
+    position: relative;
+    left: 130;
+    top: -96;
+    font-size: larger;
+}
