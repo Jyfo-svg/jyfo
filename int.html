@@ -1,26 +1,57 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<title>
-    int.com
-
-</title>
-<link href="int.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兴趣 — Jyfo</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/interests.css" rel="stylesheet">
 </head>
 <body>
-<img alt="" src="logo.jpg"/>
-<nav>
-<a class="a" href="ind.html">简介</a>
-<a class="b" href="int.html">兴趣</a>
-<a class="c" href="contact.html">联系</a>
-</nav>
-<hr/>
-<div class="mod">
-<a href="cycle.html"> 骑行 </a>
-<br/><br/><br/><br/>
-<a href="cube.html"> 魔方 </a>
-<br/><br/><br/><br/>
-<a href="travel.html"> 旅游</a>
-</div>
-<div class="ts">点击左侧导航栏可进入</div>
+
+<header class="site-header">
+    <a href="index.html"><img class="logo" src="images/logo.jpg" alt="Jyfo Logo"></a>
+    <nav>
+        <a href="ind.html">简介</a>
+        <a href="int.html" class="active">兴趣</a>
+        <a href="contact.html">联系</a>
+    </nav>
+</header>
+
+<main class="main-content">
+    <div class="page-header">
+        <h1>我的兴趣</h1>
+        <p class="subtitle">My Interests</p>
+    </div>
+
+    <div class="container">
+        <div class="interests-grid">
+            <a href="cycle.html" class="interest-card">
+                <span class="card-icon">🚴</span>
+                <h2>骑行</h2>
+                <p>公路车装备、数据分析与路上的风景</p>
+                <span class="card-arrow">→ 探索</span>
+            </a>
+            <a href="cube.html" class="interest-card">
+                <span class="card-icon">🧩</span>
+                <h2>魔方</h2>
+                <p>三阶速拧、单手练习与个人纪录突破</p>
+                <span class="card-arrow">→ 探索</span>
+            </a>
+            <a href="travel.html" class="interest-card">
+                <span class="card-icon">✈️</span>
+                <h2>旅游</h2>
+                <p>走遍粤港澳、广西等地的足迹与回忆</p>
+                <span class="card-arrow">→ 探索</span>
+            </a>
+        </div>
+        <p class="hint-text">👆 点击上方卡片进入详情</p>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>© 2025 <span>Jyfo</span> — 钾化钇的个人主页</p>
+</footer>
+
 </body>
 </html>

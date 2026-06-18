@@ -1,0 +1,123 @@
+/* ============================================
+   about.css — 简介页专属样式
+   ============================================ */
+
+/* ----- Profile Section ----- */
+.profile-section {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.profile-avatar {
+    flex-shrink: 0;
+}
+
+.profile-avatar img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-lg);
+    border: 4px solid #fff;
+    transition: var(--transition);
+}
+
+.profile-avatar img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.profile-info .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 32px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.info-item .label {
+    color: var(--text-light);
+    font-weight: 500;
+    min-width: 56px;
+}
+
+.info-item .value {
+    color: var(--text);
+    font-weight: 600;
+}
+
+/* ----- Values Section ----- */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.value-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 32px 24px;
+    text-align: center;
+    transition: var(--transition);
+    border-top: 4px solid transparent;
+}
+
+.value-card:nth-child(1) { border-top-color: #6c5ce7; }
+.value-card:nth-child(2) { border-top-color: #00b894; }
+.value-card:nth-child(3) { border-top-color: #fdcb6e; }
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.value-card .icon {
+    font-size: 2.8rem;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.value-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-info .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}

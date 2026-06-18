@@ -1,0 +1,268 @@
+/* ============================================
+   common.css — 全局公共样式
+   所有页面共享的基础样式、变量、组件
+   ============================================ */
+
+/* ----- CSS 变量 ----- */
+:root {
+    --primary: #1a1a2e;
+    --primary-light: #2d2d4a;
+    --secondary: #16213e;
+    --accent: #e94560;
+    --accent-hover: #ff6b81;
+    --accent-soft: rgba(233, 69, 96, 0.1);
+    --bg: #f0f2f5;
+    --card-bg: #ffffff;
+    --text: #2d3436;
+    --text-light: #636e72;
+    --text-muted: #b2bec3;
+    --border: #e0e0e0;
+    --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
+    --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+    --radius-sm: 8px;
+    --radius: 12px;
+    --radius-lg: 16px;
+    --transition: 0.3s ease;
+}
+
+/* ----- Reset ----- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----- Header ----- */
+.site-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    padding: 14px 40px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.18);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-header .logo {
+    height: 50px;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.site-header .logo:hover {
+    transform: scale(1.05);
+}
+
+.site-header nav {
+    display: flex;
+    gap: 6px;
+}
+
+.site-header nav a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+    position: relative;
+}
+
+.site-header nav a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-1px);
+}
+
+.site-header nav a.active {
+    color: #fff;
+    background: var(--accent);
+    font-weight: 600;
+    box-shadow: 0 2px 12px rgba(233, 69, 96, 0.35);
+}
+
+/* ----- Main Content ----- */
+.main-content {
+    flex: 1;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 36px 24px;
+}
+
+.container-wide {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 36px 24px;
+}
+
+/* ----- Card ----- */
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 28px;
+    margin-bottom: 24px;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.card-accent {
+    border-left: 4px solid var(--accent);
+}
+
+/* ----- Section Title ----- */
+.section-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--accent);
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+/* ----- Button / Link Styles ----- */
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    cursor: pointer;
+    letter-spacing: 0.3px;
+}
+
+.btn-accent {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-accent:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(233, 69, 96, 0.35);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* ----- Page Header ----- */
+.page-header {
+    text-align: center;
+    padding: 48px 20px 32px;
+}
+
+.page-header h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: 1px;
+}
+
+.page-header .subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-top: 8px;
+}
+
+/* ----- Grid Helpers ----- */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* ----- Footer ----- */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-light);
+    font-size: 0.88rem;
+    border-top: 1px solid var(--border);
+    margin-top: auto;
+    background: #fff;
+}
+
+.site-footer span {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+    .site-header {
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .site-header .logo {
+        height: 36px;
+    }
+
+    .site-header nav a {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .grid-2, .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .container, .container-wide {
+        padding: 20px 16px;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+}

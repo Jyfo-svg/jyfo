@@ -1,32 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<title>
-    cube.com
-
-</title>
-<link href="cube.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魔方 — Jyfo</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/hobbies.css" rel="stylesheet">
 </head>
 <body>
-<img alt="" src="logo.jpg"/>
-<nav>
-<a class="a" href="ind.html">简介</a>
-<a class="b" href="int.html">兴趣</a>
-<a class="c" href="contact.html">联系</a>
-</nav>
-<hr/>
-<p><b><i>     魔方 Cube</i></b></p>
-<br/><br/>
-      魔方展示：<br/><br/>
-<img alt="" src="cube.jpg" style="width: 400;"/>
-<img alt="" src="ncube.jpg" style="width: 400; height: 400;"/>
-<br/><br/>
-      数据获取：<br/><br/>
-<img alt="" src="cubestation.jpg"/><br/><br/>   
-    Cubestation         <br/><br/>     蓝牙连接智能魔方实时显示状态并记录数据<br/><br/>
-<img alt="" src="csj.jpg" style="width: 900; height: 500;"/>
-<br/><br/>
-      数据分析：<br/><br/>  以下为本人三阶速拧与单手的个人纪录复盘 <br/>
-<img alt="" src="pb.jpg" style="width: 500;"/>
-<img alt="" src="ohpb.jpg" style="width: 500;"/>
+
+<header class="site-header">
+    <a href="index.html"><img class="logo" src="images/logo.jpg" alt="Jyfo Logo"></a>
+    <nav>
+        <a href="ind.html">简介</a>
+        <a href="int.html" class="active">兴趣</a>
+        <a href="contact.html">联系</a>
+    </nav>
+</header>
+
+<main class="main-content">
+    <div class="page-header">
+        <h1>🧩 魔方 · Cube</h1>
+        <p class="subtitle">速度与技巧的追求</p>
+    </div>
+
+    <div class="container-wide">
+        <!-- Cube Collection -->
+        <h2 class="section-title">魔方展示</h2>
+        <div class="cube-showcase">
+            <img src="images/cube/cube.jpg" alt="魔方收藏1">
+            <img src="images/cube/ncube.jpg" alt="魔方收藏2">
+        </div>
+
+        <!-- Cubestation -->
+        <h2 class="section-title" style="margin-top:16px;">数据获取</h2>
+        <div class="card">
+            <div class="app-info">
+                <img src="images/cube/cubestation.jpg" alt="Cubestation">
+                <div class="app-desc">
+                    <p class="app-name">Cubestation</p>
+                    <p class="app-detail">蓝牙连接智能魔方，实时显示状态并记录数据</p>
+                </div>
+            </div>
+        </div>
+        <img class="img-full" style="margin-top:16px;" src="images/cube/csj.jpg" alt="Cubestation 数据">
+
+        <!-- PB Records -->
+        <h2 class="section-title" style="margin-top:24px;">数据分析</h2>
+        <p class="page-intro">以下为本人三阶速拧与单手的个人纪录复盘</p>
+        <div class="pb-records">
+            <img src="images/cube/pb.jpg" alt="三阶速拧 PB">
+            <img src="images/cube/ohpb.jpg" alt="单手 PB">
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>© 2025 <span>Jyfo</span> — 钾化钇的个人主页</p>
+</footer>
+
 </body>
 </html>

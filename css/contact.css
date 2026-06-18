@@ -1,0 +1,61 @@
+/* ============================================
+   contact.css — 联系页专属样式
+   ============================================ */
+
+/* ----- Contact Cards ----- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    padding: 36px 28px;
+    text-align: center;
+    transition: var(--transition);
+    border-top: 4px solid var(--accent);
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-card .contact-icon {
+    font-size: 2.8rem;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.contact-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.contact-card .email {
+    font-size: 0.95rem;
+    color: var(--accent);
+    word-break: break-all;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-card .email:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

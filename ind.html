@@ -1,41 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<title>
-    ind.com
-
-</title>
-<link href="ind.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简介 — Jyfo</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
 </head>
 <body>
-<img alt="" src="logo.jpg"/>
-<nav>
-<a class="a" href="ind.html">简介</a>
-<a class="b" href="int.html">兴趣</a>
-<a class="c" href="">联系</a>
-</nav>
-<hr/>
-<img alt="" src="tx.jpg"/>
-<div class="jj">
-<i>网名：钾化钇       性别：男      生日：2005/11/21 <br/><br/>
-       
-            籍贯：广东           民族：汉      专业：信息与计算科学</i>
-<br/>
-<br/>
-<br/>
-<ul>
-<b><li>向往</li></b>
-<br/>
-        摆脱世俗的束缚，沉浸自己的世界。
-        <br/><br/>
-<b><li>主张</li></b>
-<br/>
-        主张极简精致，逃离臃肿杂乱。
-        <br/><br/>
-<b><li>性格</li></b>
-<br/>
-         乐观积极，坚持不懈。
 
-        <br/>
-</ul>
-</div></body>
+<header class="site-header">
+    <a href="index.html"><img class="logo" src="images/logo.jpg" alt="Jyfo Logo"></a>
+    <nav>
+        <a href="ind.html" class="active">简介</a>
+        <a href="int.html">兴趣</a>
+        <a href="contact.html">联系</a>
+    </nav>
+</header>
+
+<main class="main-content">
+    <div class="page-header">
+        <h1>关于我</h1>
+        <p class="subtitle">Who I Am</p>
+    </div>
+
+    <div class="container">
+        <!-- Profile Card -->
+        <div class="card">
+            <div class="profile-section">
+                <div class="profile-avatar">
+                    <img src="images/avatar/tx.jpg" alt="头像">
+                </div>
+                <div class="profile-info">
+                    <h2 style="font-size:1.6rem;font-weight:700;color:var(--primary);margin-bottom:16px;">
+                        钾化钇 <span style="font-size:0.9rem;color:var(--text-light);font-weight:400;">— Jyfo</span>
+                    </h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="label">性别</span>
+                            <span class="value">男</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">生日</span>
+                            <span class="value">2005 / 11 / 21</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">籍贯</span>
+                            <span class="value">广东</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">民族</span>
+                            <span class="value">汉</span>
+                        </div>
+                        <div class="info-item" style="grid-column:1/-1;">
+                            <span class="label">专业</span>
+                            <span class="value">信息与计算科学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Values -->
+        <div style="margin-top:36px;">
+            <h2 class="section-title">我的信条</h2>
+        </div>
+        <div class="values-grid">
+            <div class="value-card">
+                <span class="icon">🌌</span>
+                <h3>向往</h3>
+                <p>摆脱世俗的束缚<br>沉浸自己的世界</p>
+            </div>
+            <div class="value-card">
+                <span class="icon">✨</span>
+                <h3>主张</h3>
+                <p>主张极简精致<br>逃离臃肿杂乱</p>
+            </div>
+            <div class="value-card">
+                <span class="icon">🚀</span>
+                <h3>性格</h3>
+                <p>乐观积极<br>坚持不懈</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>© 2025 <span>Jyfo</span> — 钾化钇的个人主页</p>
+</footer>
+
+</body>
 </html>

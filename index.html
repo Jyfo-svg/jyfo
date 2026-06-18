@@ -1,19 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<title>
-    jyfo.com
-
-</title>
-<link href="jyfo.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyfo — 个人主页</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
 </head>
 <body>
-<img alt="" src="logo.jpg"/>
-<nav>
-<a class="a" href="ind.html">简介</a>
-<a class="b" href="int.html">兴趣</a>
-<a class="c" href="contact.html">联系</a>
-</nav>
-<hr/>
-<i><div class="kt"> 欢迎进入我的网页</div></i>
+
+<header class="site-header">
+    <a href="index.html"><img class="logo" src="images/logo.jpg" alt="Jyfo Logo"></a>
+    <nav>
+        <a href="ind.html">简介</a>
+        <a href="int.html">兴趣</a>
+        <a href="contact.html">联系</a>
+    </nav>
+</header>
+
+<main class="main-content">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-wave">👋</div>
+            <h1>欢迎来到我的世界</h1>
+            <p class="hero-subtitle">探索我的生活 · 发现我的热爱</p>
+        </div>
+    </section>
+
+    <!-- Feature Cards -->
+    <div class="container">
+        <div class="feature-grid">
+            <a href="ind.html" class="feature-card card-accent">
+                <span class="icon">🙋</span>
+                <h3>关于我</h3>
+                <p>了解我是谁、我的理念与性格</p>
+            </a>
+            <a href="int.html" class="feature-card card-accent">
+                <span class="icon">🔥</span>
+                <h3>我的兴趣</h3>
+                <p>骑行、魔方、旅游 —— 每一份热爱</p>
+            </a>
+            <a href="contact.html" class="feature-card card-accent">
+                <span class="icon">📬</span>
+                <h3>联系我</h3>
+                <p>有共同爱好？欢迎交流</p>
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>© 2025 <span>Jyfo</span> — 钾化钇的个人主页</p>
+</footer>
+
 </body>
 </html>

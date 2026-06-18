@@ -1,87 +1,118 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<title>
-    cycle.com
-
-</title>
-<link href="cycle.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骑行 — Jyfo</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/hobbies.css" rel="stylesheet">
 </head>
 <body>
-<img alt="" src="logo.jpg"/>
-<nav>
-<a class="a" href="ind.html">简介</a>
-<a class="b" href="int.html">兴趣</a>
-<a class="c" href="contact.html">联系</a>
-</nav>
-<hr/>
-<p><b><i>     骑行 Cycle</i></b></p>
-<br/><br/>
-               装备投入：
-    <br/>
-<br/>
-<table border="5" cellpadding="20">
-<tr>
-<td>项目</td>
-<td>单车</td>
-<td>头盔</td>
-<td>尾灯</td>
-<td>眼镜</td>
-<td>码表</td>
-<td>锁鞋</td>
-<td>锁踏</td>
-<td>骑服</td>
-<td>把带</td>
-<td>相机</td>
-<td>踏频</td>
-<td>心率</td>
-<td>水壶</td>
-</tr>
-<tr>
-<td>型号</td>
-<td>佳沃御夫座</td>
-<td>森瑞梦塔罗</td>
-<td>洛克兄弟</td>
-<td>卡普沃scvcn</td>
-<td>迹驰bsc100s</td>
-<td>和博ey113</td>
-<td>卓悦zp112</td>
-<td>迈森兰mbo</td>
-<td>npy黑白</td>
-<td>大疆action4</td>
-<td>cyclami</td>
-<td>华为band10</td>
-<td>evr渐变</td>
-</tr>
-</table>
-<br/><br/><br/><br/>
-<hr/>
-<br/><br/>
-                 数据获得与分析：
-<br/><br/>
-<img alt="" src="igp.jpg"/>     
-      X     
-      <img alt="" src="strava.jpg"/>     
-      X     
-      <img alt="" src="dji.jpg"/>     
-      X     
-      <img alt="" src="hw.jpg"/>
-<br/><br/>
-       IGPSPORT                       STRAVA
-                              DJI                       HUAWEI HEALTH
-    <br/><br/>
- 
-     数据获取                       数据存储
-                          实时影像                       心率提供
-    
-<br/><br/>
-<div class="sjfx"><img alt="" src="sj.png" style="width: 400;"/>              
-<img alt="" src="wc.png" style="width: 400;"/>           
-<img alt="" src="mbgn.jpg" style="width: 600; height: 890;"/>
-<br/><br/>
-<img alt="" src="sjfx.png" style="width: 800; height: 500;"/>
-<img alt="" src="dyrcsj.jpg" style="width: 800; height: 500;"/>
-</div>
-<img alt="" src="qx.jpg" style="width: 900;"/>
+
+<header class="site-header">
+    <a href="index.html"><img class="logo" src="images/logo.jpg" alt="Jyfo Logo"></a>
+    <nav>
+        <a href="ind.html">简介</a>
+        <a href="int.html" class="active">兴趣</a>
+        <a href="contact.html">联系</a>
+    </nav>
+</header>
+
+<main class="main-content">
+    <div class="page-header">
+        <h1>🚴 骑行 · Cycle</h1>
+        <p class="subtitle">装备投入与数据分析</p>
+    </div>
+
+    <div class="container-wide">
+        <!-- Equipment -->
+        <h2 class="section-title">装备投入</h2>
+        <div class="card">
+            <div class="equip-table-wrapper">
+                <table class="equip-table">
+                    <thead>
+                        <tr>
+                            <th>项目</th>
+                            <th>单车</th>
+                            <th>头盔</th>
+                            <th>尾灯</th>
+                            <th>眼镜</th>
+                            <th>码表</th>
+                            <th>锁鞋</th>
+                            <th>锁踏</th>
+                            <th>骑服</th>
+                            <th>把带</th>
+                            <th>相机</th>
+                            <th>踏频</th>
+                            <th>心率</th>
+                            <th>水壶</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>型号</td>
+                            <td>佳沃御夫座</td>
+                            <td>森瑞梦塔罗</td>
+                            <td>洛克兄弟</td>
+                            <td>卡普沃scvcn</td>
+                            <td>迹驰bsc100s</td>
+                            <td>和博ey113</td>
+                            <td>卓悦zp112</td>
+                            <td>迈森兰mbo</td>
+                            <td>npy黑白</td>
+                            <td>大疆action4</td>
+                            <td>cyclami</td>
+                            <td>华为band10</td>
+                            <td>evr渐变</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Data Ecosystem -->
+        <h2 class="section-title" style="margin-top:16px;">数据获得与分析</h2>
+        <div class="data-sources">
+            <div class="data-source-item">
+                <img src="images/cycling/igp.jpg" alt="IGPSPORT">
+                <p class="source-name">IGPSPORT</p>
+                <p class="source-role">数据获取</p>
+            </div>
+            <div class="data-source-item">
+                <img src="images/cycling/strava.jpg" alt="STRAVA">
+                <p class="source-name">STRAVA</p>
+                <p class="source-role">数据存储</p>
+            </div>
+            <div class="data-source-item">
+                <img src="images/cycling/dji.jpg" alt="DJI">
+                <p class="source-name">DJI</p>
+                <p class="source-role">实时影像</p>
+            </div>
+            <div class="data-source-item">
+                <img src="images/cycling/hw.jpg" alt="HUAWEI HEALTH">
+                <p class="source-name">HUAWEI HEALTH</p>
+                <p class="source-role">心率提供</p>
+            </div>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="card">
+            <div class="screenshot-grid">
+                <img src="images/cycling/sj.png" alt="数据分析1">
+                <img src="images/cycling/wc.png" alt="数据分析2">
+                <img src="images/cycling/mbgn.jpg" alt="目标管理">
+                <img src="images/cycling/sjfx.png" alt="数据分析3">
+                <img src="images/cycling/dyrcsj.jpg" alt="数据分析4">
+            </div>
+        </div>
+
+        <img class="img-full" src="images/cycling/qx.jpg" alt="骑行路线">
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>© 2025 <span>Jyfo</span> — 钾化钇的个人主页</p>
+</footer>
 
 </body>
 </html>
